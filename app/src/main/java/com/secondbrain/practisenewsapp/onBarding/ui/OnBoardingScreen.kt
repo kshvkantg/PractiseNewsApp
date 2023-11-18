@@ -27,11 +27,14 @@ import com.secondbrain.practisenewsapp.core.utils.Dimens
 import com.secondbrain.practisenewsapp.core.components.FillButton
 import com.secondbrain.practisenewsapp.onBarding.data.onboardingPages
 import com.secondbrain.practisenewsapp.core.components.PageIndicator
+import com.secondbrain.practisenewsapp.onBarding.presentation.OnBoardingEvent
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-fun OnBoardingScreen() {
+fun OnBoardingScreen(
+    event : (OnBoardingEvent) -> Unit
+) {
     Column(modifier = Modifier.fillMaxSize()) {
         val pagerState = rememberPagerState(initialPage = 0)
 
@@ -73,7 +76,10 @@ fun OnBoardingScreen() {
 
             ButtonPallet(
                 modifier = Modifier.padding(vertical = 10.dp),
-                pagerState = pagerState, buttonState = buttonState
+                pagerState = pagerState, buttonState = buttonState,
+                onClick = {
+                    event.invoke(OnBoardingEvent.SaveAppEntry)
+                }
             )
 
         }
@@ -85,7 +91,8 @@ fun OnBoardingScreen() {
 private fun ButtonPallet(
     modifier: Modifier,
     pagerState: PagerState,
-    buttonState: State<List<Int>>
+    buttonState: State<List<Int>>,
+    onClick: ()-> Unit
 ) {
     Row(
         horizontalArrangement = Arrangement.Center,
@@ -110,14 +117,14 @@ private fun ButtonPallet(
             isPrimary = true
         ) {
             scope.launch {
-                if (pagerState.currentPage != onboardingPages.size) {
+                if (pagerState.currentPage != onboardingPages.size - 1) {
                     pagerState.animateScrollToPage(pagerState.currentPage + 1)
                 } else {
                     // in the case of last possible state the forward button would initiate home page
+                    println("invokes system")
+                    onClick.invoke()
                 }
             }
         }
     }
 }
-
-private const val TAG: String = "OnBoardingScreen"

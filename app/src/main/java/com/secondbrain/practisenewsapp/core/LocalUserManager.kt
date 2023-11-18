@@ -10,6 +10,8 @@ import com.secondbrain.practisenewsapp.utils.Constants.IS_FIRST_TIME_ENTRY
 import com.secondbrain.practisenewsapp.utils.Constants.PREFERENCE_STORE
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
+import javax.inject.Inject
+import javax.inject.Singleton
 
 
 interface LocalUserManager {
@@ -23,6 +25,7 @@ interface LocalUserManager {
 
 }
 
+@Singleton
 class LocalUserManagerImplementation (
     private val context : Context
 ) : LocalUserManager {
