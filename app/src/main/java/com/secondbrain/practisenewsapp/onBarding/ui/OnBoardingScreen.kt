@@ -1,4 +1,4 @@
-package com.secondbrain.practisenewsapp.presentation.onboarding
+package com.secondbrain.practisenewsapp.onBarding.ui
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.Arrangement
@@ -23,10 +23,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.secondbrain.practisenewsapp.R
-import com.secondbrain.practisenewsapp.presentation.Dimens
-import com.secondbrain.practisenewsapp.presentation.components.FillButton
-import com.secondbrain.practisenewsapp.presentation.components.PageIndicator
-import com.secondbrain.practisenewsapp.presentation.onboarding.components.OnboardingPageView
+import com.secondbrain.practisenewsapp.core.utils.Dimens
+import com.secondbrain.practisenewsapp.core.components.FillButton
+import com.secondbrain.practisenewsapp.onBarding.data.onboardingPages
+import com.secondbrain.practisenewsapp.core.components.PageIndicator
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalFoundationApi::class)

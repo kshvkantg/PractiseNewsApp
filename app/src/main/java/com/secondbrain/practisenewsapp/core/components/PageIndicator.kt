@@ -1,4 +1,4 @@
-package com.secondbrain.practisenewsapp.presentation.components
+package com.secondbrain.practisenewsapp.core.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -11,7 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import com.secondbrain.practisenewsapp.presentation.Dimens
+import com.secondbrain.practisenewsapp.core.utils.Dimens
 
 @Composable
 fun PageIndicator(

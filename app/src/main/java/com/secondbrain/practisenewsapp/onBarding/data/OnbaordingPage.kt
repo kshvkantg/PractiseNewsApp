@@ -1,4 +1,4 @@
-package com.secondbrain.practisenewsapp.presentation.onboarding
+package com.secondbrain.practisenewsapp.onBarding.data
 
 import androidx.annotation.DrawableRes
 import com.secondbrain.practisenewsapp.R

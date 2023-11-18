@@ -1,4 +1,4 @@
-package com.secondbrain.practisenewsapp.presentation
+package com.secondbrain.practisenewsapp.core.utils
 
 import androidx.compose.ui.unit.dp
 

@@ -1,4 +1,4 @@
-package com.secondbrain.practisenewsapp.ui.theme
+package com.secondbrain.practisenewsapp.core.theme
 
 import android.app.Activity
 import android.os.Build

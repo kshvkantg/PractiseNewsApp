@@ -1,7 +1,5 @@
-package com.secondbrain.practisenewsapp.presentation.components
+package com.secondbrain.practisenewsapp.core.components
 
-import android.opengl.Visibility
-import android.view.View
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -9,7 +7,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.text.font.FontWeight
-import com.secondbrain.practisenewsapp.presentation.Dimens
+import com.secondbrain.practisenewsapp.core.utils.Dimens
 
 @Composable
 fun FillButton(

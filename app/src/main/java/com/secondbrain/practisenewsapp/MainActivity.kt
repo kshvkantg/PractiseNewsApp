@@ -7,14 +7,10 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import com.secondbrain.practisenewsapp.presentation.onboarding.OnBoardingScreen
-import com.secondbrain.practisenewsapp.ui.theme.PractiseNewsAppTheme
+import com.secondbrain.practisenewsapp.onBarding.ui.OnBoardingScreen
+import com.secondbrain.practisenewsapp.core.theme.PractiseNewsAppTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

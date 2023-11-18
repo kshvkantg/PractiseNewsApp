@@ -1,7 +1,6 @@
-package com.secondbrain.practisenewsapp.presentation.onboarding.components
+package com.secondbrain.practisenewsapp.onBarding.ui
 
 import android.content.res.Configuration.UI_MODE_NIGHT_YES
-import android.content.res.Resources.Theme
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -11,20 +10,17 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
-import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
-import com.secondbrain.practisenewsapp.R
-import com.secondbrain.practisenewsapp.presentation.Dimens
-import com.secondbrain.practisenewsapp.presentation.onboarding.OnboardingPage
-import com.secondbrain.practisenewsapp.presentation.onboarding.onboardingPages
-import com.secondbrain.practisenewsapp.ui.theme.PractiseNewsAppTheme
+import com.secondbrain.practisenewsapp.core.utils.Dimens
+import com.secondbrain.practisenewsapp.onBarding.data.OnboardingPage
+import com.secondbrain.practisenewsapp.onBarding.data.onboardingPages
+import com.secondbrain.practisenewsapp.core.theme.PractiseNewsAppTheme
 
 @Composable
 fun OnboardingPageView(
