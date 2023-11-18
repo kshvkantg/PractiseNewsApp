@@ -69,4 +69,5 @@ dependencies {
 
     //splash screen
     implementation("androidx.core:core-splashscreen:1.1.0-alpha02")
+    implementation("com.google.accompanist:accompanist-pager:0.27.1" )
 }
