@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">PractiseNewsApp</string>
+
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="get_started">Start</string>
+    <string name="empty_string"></string>
 </resources>
