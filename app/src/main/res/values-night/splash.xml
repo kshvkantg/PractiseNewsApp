@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="App.Starting.Theme" parent = "Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#000</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.PractiseNewsApp</item>  <!--this argument
+         defines the main theme of the app that would be implemented after splash screen is shown.
+          i.e this is the main theme of the app -->
+
+    </style>
+</resources>
